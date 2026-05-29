@@ -27,7 +27,11 @@ final class AddCommandCompilerPass implements CompilerPassInterface
         $definition->setPublic(true);
         $taggedServices = $container->findTaggedServiceIds(Container::COMMAND_TAG);
         foreach (array_keys($taggedServices) as $id) {
-            $definition->addMethodCall('add', [new Reference($id)]);
+            if (method_exists(Application::class, 'addCommand')) {
+                $definition->addMethodCall('addCommand', [new Reference($id)]);
+            } else {
+                $definition->addMethodCall('add', [new Reference($id)]);
+            }
         }
     }
 }
