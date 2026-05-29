@@ -15,11 +15,11 @@
   },
   "require": {
     "php": ">=8.0 <8.5",
-    "symfony/config": "^5.4 || ^6.0.19 || ^7",
-    "symfony/console": "^5.4 || ^6.0.19 || ^7",
-    "symfony/dependency-injection": "^5.4 || ^6.0.20 || ^7",
-    "symfony/process": "^5.4 || ^6.0.19 || ^7",
-    "symfony/yaml": "^5.4 || ^6.0.19 || ^7",
+    "symfony/config": "^5.4 || ^6.0.19 || ^7 || ^8",
+    "symfony/console": "^5.4 || ^6.0.19 || ^7 || ^8",
+    "symfony/dependency-injection": "^5.4 || ^6.0.20 || ^7 || ^8",
+    "symfony/process": "^5.4 || ^6.0.19 || ^7 || ^8",
+    "symfony/yaml": "^5.4 || ^6.0.19 || ^7 || ^8",
     "webmozart/assert": "^1.11 || ^2"
   },
   "require-dev": {
